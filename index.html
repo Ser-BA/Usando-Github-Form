@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>USANDO FORMULARIO</title>
+</head>
+
+<body>
+    
+    <h1>FORMULARIO DE RESERVA</h1>
+    
+   
+
+    <form action="data.php" method="POST" target="_self">
+
+
+        <fieldset class="campo1">
+            
+            <legend>Informacion Personal</legend>
+
+                <label for="form-nombre">Nombre:</label><br>
+                    <input class="box1" type="text" id="form-nombre" name="nombre"><br>
+
+                <label for="form-Apellido">Apellido:</label><br>   
+                    <input class="box1" type="text" id="form-Apellido" name="apellido"><br>
+
+                <label for="form-email">Email:</label><br>   
+                    <input class="box1" type="email" id="form-email" name="email"><br>
+
+                <label for="form-number">Telefono:</label><br>
+                        <input class="box1" type="number" id="form-number" name="numero-de-telefono"><br>
+
+
+
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset class="campo2">
+            <legend>Medios de pago</legend>
+
+                <label for="tarjeta-de-credito">Tarjeta de Credito</label>
+                    <input type="radio" name="credito" id="tarjeta-de-credito" value="credito">
+
+                <label for="tarjeta-de-debito">Tarjeta de Debito</label>
+                    <input type="radio" name="Debito" id="tarjeta-de-debito" value="debito">
+
+                <label for="mercado-pago">Mercado Pago</label>        
+                    <input type="radio" name="mercado-pago" id="mercado-pago" value="mercado-pago">
+            
+        </fieldset>
+       
+        <br>
+        <br>
+
+        <fieldset class="campo3">
+            <legend>Preferencias</legend>
+
+                <label for="Habitaciones">Habitaciones:</label>
+                <input list="Habitaciones" name="Habitaciones">
+                <datalist id="Habitaciones">
+                
+                    <option>1 Habitacion</option>
+                    <option>2 Habitaciones</option>
+                    <option>3 Habitaciones</option>
+                    <option>4 Habitaciones</option>
+
+                </datalist>
+
+                <label for="Camas">Camas:</label>
+                <input list="Camas" name="Camas">
+                <datalist id="Camas">
+
+                    <option>1 Cama</option>
+                    <option>2 Camas</option>
+                    <option>3 Camas</option>
+                    <option>4 Camas</option>
+                    
+                </datalist>
+
+                <label for="Desayuno">Desayuno:</label>
+                <input list="Desayuno" name="Desayuno">
+                <datalist id="Desayuno">
+
+                    <option>Con Desayuno</option>
+                    <option>Sin Desayuno</option>
+                   
+                </datalist>
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset class="campo4">
+            <legend>Fechas</legend>
+
+           <label for="Fecha-ingreso">Fecha Ingreso:</label>
+           <input type="date" name="Fecha-ingreso">
+
+           <label for="Fecha-egreso">Fecha de Egreso</label>
+           <input type="date" name="Fecha-egreso">
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset class="campo5"> 
+            <legend>Notas y solicitudes especiales</legend>
+            <textarea name="cuadro-texto" id="textarea"></textarea>
+        </fieldset>
+
+        <br>
+        
+        <button type="submit" name="Enviar">Enviar</button>
+       
+
+
+
+
+    </form>
+</body>
+</html>
